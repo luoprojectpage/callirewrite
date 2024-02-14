@@ -137,6 +137,13 @@
 </section>
 <!-- End paper abstract -->
 
+<style>  
+  /* 为每个视频元素添加右边距，除了最后一个 */  
+  .video-container video:not(:last-child) {  
+    margin-right: 4%; /* 设置您想要的间距百分比 */  
+  }  
+</style>  
+
 <section class="section">
   <div class="hero-body">
     <div class="container is-max-desktop">
@@ -146,24 +153,30 @@
       
         <p style="margin-top: 20px; margin-bottom: 20px">
           <div class="column is-centered has-text-centered" style="padding-top: unset">
-            <video poster="" id="tree" autoplay muted loop playsinline width="21%"><source src="static/videos/chin_1.mp4" type="video/mp4"></video>
-            <video poster="" id="tree" autoplay muted loop playsinline width="21%" style="margin-left: 6px;"><source src="static/videos/chin_2.mp4" type="video/mp4"></video>
-            <video poster="" id="tree" autoplay muted loop playsinline width="21%" style="margin-left: 6px;"><source src="static/videos/chin_3.mp4" type="video/mp4"></video>
-            <video poster="" id="tree" autoplay muted loop playsinline width="21%" style="margin-left: 6px;"><source src="static/videos/chin_4.mp4" type="video/mp4"></video>
+            <div class="video-container">  
+              <video poster="" id="tree" autoplay muted loop playsinline width="21%"><source src="static/videos/chin_1.mp4" type="video/mp4"></video>
+              <video poster="" id="tree" autoplay muted loop playsinline width="21%"><source src="static/videos/chin_2.mp4" type="video/mp4"></video>
+              <video poster="" id="tree" autoplay muted loop playsinline width="21%"><source src="static/videos/chin_3.mp4" type="video/mp4"></video>
+              <video poster="" id="tree" autoplay muted loop playsinline width="21%"><source src="static/videos/chin_4.mp4" type="video/mp4"></video>
+            </div>
           </div>
         </p>
         <p style="margin-top: 20px; margin-bottom: 20px">
           <div class="column is-centered has-text-centered" style="padding-top: unset">
-            <video poster="" id="tree" autoplay muted loop playsinline width="28%"><source src="static/videos/egy_1.mp4" type="video/mp4"></video>
-            <video poster="" id="tree" autoplay muted loop playsinline width="28%" style="margin-left: 9px;"><source src="static/videos/egy_2.mp4" type="video/mp4"></video>
-            <video poster="" id="tree" autoplay muted loop playsinline width="28%" style="margin-left: 9px;"><source src="static/videos/egy_3.mp4" type="video/mp4"></video>
+            <div class="video-container">  
+              <video poster="" id="tree" autoplay muted loop playsinline width="28%"><source src="static/videos/egy_1.mp4" type="video/mp4"></video>
+              <video poster="" id="tree" autoplay muted loop playsinline width="28%"><source src="static/videos/egy_2.mp4" type="video/mp4"></video>
+              <video poster="" id="tree" autoplay muted loop playsinline width="28%"><source src="static/videos/egy_3.mp4" type="video/mp4"></video>
+            </div>
           </div>
         </p>
         <p style="margin-top: 20px; margin-bottom: 20px">
           <div class="column is-centered has-text-centered" style="padding-top: unset">
-            <video poster="" id="tree" autoplay muted loop playsinline width="28%"><source src="static/videos/tam_1.mp4" type="video/mp4"></video>
-            <video poster="" id="tree" autoplay muted loop playsinline width="28%" style="margin-left: 9px;"><source src="static/videos/tam_2.mp4" type="video/mp4"></video>
-            <video poster="" id="tree" autoplay muted loop playsinline width="28%" style="margin-left: 9px;"><source src="static/videos/tam_3.mp4" type="video/mp4"></video>
+            <div class="video-container">  
+              <video poster="" id="tree" autoplay muted loop playsinline width="28%"><source src="static/videos/tam_1.mp4" type="video/mp4"></video>
+              <video poster="" id="tree" autoplay muted loop playsinline width="28%"><source src="static/videos/tam_2.mp4" type="video/mp4"></video>
+              <video poster="" id="tree" autoplay muted loop playsinline width="28%"><source src="static/videos/tam_3.mp4" type="video/mp4"></video>
+            </div>
             <div class="columns is-centered has-text-centered">
               <h2 class="subtitle"><br>CalliRewrite can inference plausible stroke orders and generate controls across diverse scripts.</h2>
             </div>
