@@ -138,28 +138,30 @@
 <!-- End paper abstract -->
 
 
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Methodology</h2>
-        <div class="content has-text-justified">
-          <p>
-            We focus on unsupervised learning from plain images and discovering dexterous control over various utensils. 
-            Our method employs a hierarchical structure encompassing a CNN-encoded LSTM model to deduce stroke-level orders, 
-            and a reinforcement learning (RL) pipeline to fine-tune the coarse sequences into tool-aware stylized control, 
-            controlling the brush agent with soft-actor-critic (SAC) algorithm.
-          </p>
-          <div class="column is-centered has-text-centered">
-            <img src="static/images/models.png" alt="structure"/>
+<section class="section">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Methodology</h2>
+          <div class="content has-text-justified">
+            <p>
+              We focus on unsupervised learning from plain images and discovering dexterous control over various utensils. 
+              Our method employs a hierarchical structure encompassing a CNN-encoded LSTM model to deduce stroke-level orders, 
+              and a reinforcement learning (RL) pipeline to fine-tune the coarse sequences into tool-aware stylized control, 
+              controlling the brush agent with soft-actor-critic (SAC) algorithm.
+            </p>
+            <div class="column is-centered has-text-centered">
+              <img src="static/images/models.png" alt="structure"/ width="80%"/>
+            </div>
+            <p>
+              An overview of the training process of CalliRewrite pipeline. 
+              We develop our coarse sequence extraction module based on Mo et al. and propose tailored unsupervised loss functions for human-like glyph decomposition. 
+              In the second phase, we formulate the task into a constrained optimization task, leveraging SAC algorithm on our crafted environment to finetune dexterous control sequences. 
+              Coarse sequences are set into initial states to curtail ineffective exploration and boost training.
+    
+            </p>
           </div>
-          <p>
-            An overview of the training process of CalliRewrite pipeline. 
-            We develop our coarse sequence extraction module based on Mo et al. and propose tailored unsupervised loss functions for human-like glyph decomposition. 
-            In the second phase, we formulate the task into a constrained optimization task, leveraging SAC algorithm on our crafted environment to finetune dexterous control sequences. 
-            Coarse sequences are set into initial states to curtail ineffective exploration and boost training.
-
-          </p>
         </div>
       </div>
     </div>
